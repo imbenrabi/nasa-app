@@ -1,12 +1,14 @@
 import { HandlerService } from './handler.service';
-import { MobilizeService } from './mobilize.service';
+import { NasaService } from './nasa.service';
 import { ParsingService } from './parsing.service';
+
+
 
 /**
  * Export singleton services
  */
 export const services = {
+    nasa: new NasaService(),
     handler: new HandlerService(),
-    mobilize: new MobilizeService(),
     parsing: new ParsingService()
 };

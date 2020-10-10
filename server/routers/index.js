@@ -1,3 +1,3 @@
-import { UsersRouter } from './users';
+import { MediasRouter } from './medias';
 
-export const routers = [UsersRouter];
+export const routers = [MediasRouter];

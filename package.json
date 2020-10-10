@@ -11,6 +11,7 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
+    "env-cmd": "^10.1.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.10.8",
@@ -23,7 +24,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start:server": "nodemon --exec babel-node ./server/server.js",
+    "start:server": "env-cmd -f ./config/dev.env nodemon --exec babel-node ./server/server.js",
     "dev": "yarn start & yarn start:server",
     "build": "react-scripts build",
     "test": "react-scripts test",

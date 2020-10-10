@@ -3,18 +3,21 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import axios from "axios"
+import NavBar from './components/NavBar';
+import Container from './components/Container';
 
-// const axios = require('axios')
 
-class App extends Component {
 
-  render() {
+function App() {
+  return (
+    <div>
+      <NavBar />
+      <Container />
+    </div>
 
-    return (
-      <div><p>Hello World!</p></div>
-    )
-  }
-
+  )
 }
+
+
 
 export default App;
